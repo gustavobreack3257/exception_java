@@ -54,7 +54,6 @@ public class Reservation {
 				+ sdf.format(checkIn)
 				+ ", checkout: "
 				+ sdf.format(checkOut)
-				+ " "
 				+ duration()
 				+ " nigths ";
 	}

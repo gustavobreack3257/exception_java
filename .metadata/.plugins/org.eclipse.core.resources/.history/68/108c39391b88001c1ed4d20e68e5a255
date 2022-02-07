@@ -14,7 +14,7 @@ public class Reservation {
 	 public Reservation() {
 	 }
 	 
-	 public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+	 public Reservation(Integer rooNumber, Date checkIn, Date checkOut) {
 		 		this.roomNumber = roomNumber;
 		 		this.checkIn = checkIn;
 		 		this.checkOut = checkOut;
@@ -54,7 +54,6 @@ public class Reservation {
 				+ sdf.format(checkIn)
 				+ ", checkout: "
 				+ sdf.format(checkOut)
-				+ " "
 				+ duration()
 				+ " nigths ";
 	}

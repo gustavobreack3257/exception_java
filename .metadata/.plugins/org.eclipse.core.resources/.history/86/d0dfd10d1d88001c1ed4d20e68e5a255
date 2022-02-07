@@ -21,35 +21,13 @@ public class Progam {
 		System.out.print("Check out date(dd/MM/yyyy): ");
 		Date checkOut = sdf.parse(sc.next());
 		
-		//Solução ruim 1
+		
 		if(!checkOut.after(checkIn)) {
 			System.out.println("Error in reservation: Check-Out date must be after check-in date.");
 		}
 		else {
 			Reservation reserva = new Reservation(number, checkIn, checkOut);
 			System.out.println("Reservention: " + reserva);
-			
-			System.out.println();
-			System.out.print("Enter date to update th reservation: ");
-			System.out.print("Room number: ");
-			number = sc.nextInt();
-			System.out.print("Check in date(dd/MM/yyy): ");
-			checkIn = sdf.parse(sc.next());
-			System.out.print("Check out date(dd/MM/yyyy): ");
-			checkOut = sdf.parse(sc.next());
-			
-			Date now = new Date();
-			if(checkIn.before(now) || checkOut.before(now)) {
-				System.out.println("Error in reservation: Check-Out date must be after check-in date.");
-			}
-			else if(!checkOut.after(checkIn)) {
-				System.out.println("Error in reservation: Check-Out date must be after check-in date.");
-			}
-			else {
-				reserva.updateDates(checkIn, checkOut);
-				System.out.println("Reserva" + reserva);
-			}
-
 		}
 		
 		sc.close();
