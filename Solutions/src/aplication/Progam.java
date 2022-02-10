@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Reservation;
+import model.exceptions.DomainException;
 
 public class Progam {
 
@@ -39,6 +40,9 @@ public class Progam {
 		}
 		catch(ParseException e) {
 			System.out.println("Invalid date format");
+		}
+		catch(DomainException e) {
+			System.out.println("Error in reservation " + e.getMessage());
 		}
 		
 		sc.close();

@@ -2,3 +2,4 @@ INDEX VERSION 1.131+C:\temp\exceçoes_java\.metadata\.plugins\org.eclipse.jdt.cor
 1865797976.index
 785018819.index
 3471238043.index
+949368685.index
